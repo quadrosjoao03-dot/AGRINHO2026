@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra do Paraná</title>
     <style>
-        /* CSS básico para esconder os passos que não estão ativos */
+        /* Isso esconde os passos e mostra só o ativo */
         body { font-family: sans-serif; padding: 20px; }
         .passo { display: none; }
         .passo.ativo { display: block; }
@@ -15,48 +15,54 @@
 <body>
 
     <main>
-        <h1>Aventura na Terra do Paraná</h1>
+        <h1>Terra do Paraná</h1>
         <hr/>
 
         <div class="passo ativo" id="passo-0">
-            <p>Você acorda desorientado, mas percebe estar em grande altura. <strong>O vento sopra forte.</strong></p>
-            <button class="btn-proximo" data-proximo="1">Explorar a região do Paraná</button>
-            <button class="btn-proximo" data-proximo="2">Descer em direção ao Capão da Onça</button>
+            <p>Você acorda desnorteado, mas percebe estar em grande altura</p>
+            <button class="btn-proximo" data-proximo="1">Paraná</button>
+            <button class="btn-proximo" data-proximo="2">Capão da Onça</button>
         </div>
 
         <div class="passo" id="passo-1">
-            <p>Embora pareça um local recreativo, você não vê ninguém por perto.<br/><em>O silêncio é absoluto.</em> O que você faz?</p>
+            <p>Embora pareça um local recreativo, você não vê ninguém por perto,<br/> o que você faz?.</p>
+            
+            <p><a href="https://www.viajeparana.com" target="_blank">Acessar site de Turismo</a></p>
+
             <button class="btn-proximo" data-proximo="3">Tentar achar ajuda por perto</button>
             <button class="btn-proximo" data-proximo="4">Desistir e tentar voltar para casa</button>
         </div>
 
         <div class="passo" id="passo-2">
-            <p>A descida é íngreme. Você encontra uma trilha marcada, mas parece perigosa.</p>
-            <button class="btn-proximo" data-proximo="0">Voltar para o topo</button>
+            <p>Você desceu para o Capão da Onça.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
         </div>
 
         <div class="passo" id="passo-3">
-            <p>Você caminha por alguns minutos e encontra uma velha cabana abandonada.</p>
-            <button class="btn-proximo" data-proximo="0">Fim de jogo - Tentar novamente</button>
+            <p>Você foi procurar ajuda e encontrou uma cabana.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
         </div>
 
         <div class="passo" id="passo-4">
-            <p>Você tenta refazer seus passos, mas logo percebe que está andando em círculos.</p>
-            <button class="btn-proximo" data-proximo="0">Fim de jogo - Tentar novamente</button>
+            <p>Você tentou voltar para casa, mas se perdeu.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
         </div>
     </main>
 
     <script>
-        // Script para fazer a transição entre as telas do jogo
+        // Lógica para fazer os botões funcionarem
         const botoes = document.querySelectorAll('.btn-proximo');
 
         botoes.forEach(botao => {
             botao.addEventListener('click', function() {
                 const passoAtual = document.querySelector('.ativo');
                 const proximoPassoId = 'passo-' + this.getAttribute('data-proximo');
+                const proximoPasso = document.getElementById(proximoPassoId);
 
-                passoAtual.classList.remove('ativo');
-                document.getElementById(proximoPassoId).classList.add('ativo');
+                if (proximoPasso) {
+                    passoAtual.classList.remove('ativo');
+                    proximoPasso.classList.add('ativo');
+                }
             });
         });
     </script>
