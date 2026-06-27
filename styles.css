@@ -15,73 +15,6 @@ body {
     border: 2px solid #4f8a2b;
 }
 
-#dark {
-    display: none;
-}
-
-#dark:target + #page {
-    background-color: #1c1c1c;
-    color: #f1f1dc;
-}
-
-#dark:target + #page .dark-toggle {
-    background-color: #f1f1dc;
-    color: #1c1c1c;
-}
-
-#dark:target + #page .menu-btn {
-    background-color: #333;
-}
-
-#dark:target + #page .menu-btn a {
-    color: #f1f1dc;
-}
-
-#dark:target + #page .menu-btn:hover {
-    background-color: #555;
-}
-
-#dark:target + #page .content-section ul,
-#dark:target + #page .content-section ol {
-    color: #d9d9b8;
-}
-
-#dark:target + #page blockquote {
-    background-color: #2e2e2e;
-    border-color: #5a5a5a;
-}
-
-#dark:target + #page img {
-    opacity: 0.9;
-}
-
-.dark-toggle {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-color: #4f8a2b;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.dark-on {
-    display: inline-block;
-}
-
-.dark-off {
-    display: none;
-}
-
-#dark:target + #page .dark-on {
-    display: none;
-}
-
-#dark:target + #page .dark-off {
-    display: inline-block;
-}
 
 .menu-buttons {
     display: flex;
@@ -113,8 +46,7 @@ body {
     display: none;
 }
 
-.content-section.active,
-.content-section:target {
+.content-section.active {
     display: block;
 }
 
