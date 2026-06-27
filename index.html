@@ -10,63 +10,98 @@
     <main>
         <h1>Por que a Agricultura é Importante?</h1>
 
-        <p>A agricultura é <strong>fundamental</strong> para a nossa sobrevivência e para o desenvolvimento do país.</p>
+        <div class="menu-buttons">
+            <button class="menu-btn active" data-target="intro">Introdução</button>
+            <button class="menu-btn" data-target="beneficios">Benefícios</button>
+            <button class="menu-btn" data-target="parana">Paraná</button>
+            <button class="menu-btn" data-target="sustentabilidade">Sustentabilidade</button>
+            <button class="menu-btn" data-target="quiz">Quiz</button>
+            <button class="menu-btn" data-target="conclusao">Conclusão</button>
+        </div>
 
-        <h2>Benefícios da Agricultura</h2>
-
-        <p>A agricultura nos traz muitos benefícios:</p>
-
-        <ul>
-            <li>Produz alimento para toda a população</li>
-            <li>Gera empregos no campo e na cidade</li>
-            <li>Sustenta a economia do país</li>
-            <li>Preserva o meio ambiente quando feita de forma correta</li>
-        </ul>
-
-        <h2>O Agro no Paraná</h2>
-
-        <p>O Paraná é um estado muito importante para a agricultura do Brasil. Aqui plantamos:</p>
-
-        <ol>
-            <li>Soja</li>
-            <li>Milho</li>
-            <li>Trigo</li>
-            <li>Café</li>
-            <li>Frutas</li>
-        </ol>
-
-        <h2>Sustentabilidade</h2>
-
-        <p>É muito importante cultivar a terra de forma <em>sustentável</em>. Isso significa:</p>
-
-        <blockquote>
-            <p>Cuidar do solo, usar água corretamente e respeitar a natureza para que as próximas gerações também possam plantar e colher.</p>
-        </blockquote>
-
-        <section class="quiz-section">
-            <h2>Quiz rápido sobre metadados</h2>
-            <p>Teste seus conhecimentos sobre informações que descrevem conteúdos digitais.</p>
-
-            <div class="quiz-item">
-                <p>1. O que são metadados?</p>
-                <label><input type="radio" name="q1"> Dados que descrevem outros dados</label>
-                <label><input type="radio" name="q1"> Apenas imagens sem legenda</label>
-                <label><input type="radio" name="q1"> Um tipo de arquivo de vídeo</label>
-            </div>
-
-            <div class="quiz-item">
-                <p>2. Qual tag HTML é usada para descrever a página?</p>
-                <label><input type="radio" name="q2"> &lt;meta name="description" content="..."&gt;</label>
-                <label><input type="radio" name="q2"> &lt;title&gt;...&lt;/title&gt;</label>
-                <label><input type="radio" name="q2"> &lt;header&gt;...&lt;/header&gt;</label>
-            </div>
+        <section id="intro" class="content-section active">
+            <p>A agricultura é <strong>fundamental</strong> para a nossa sobrevivência e para o desenvolvimento do país.</p>
         </section>
 
-        <h2>Conclusão</h2>
+        <section id="beneficios" class="content-section">
+            <h2>Benefícios da Agricultura</h2>
+            <p>A agricultura nos traz muitos benefícios:</p>
+            <ul>
+                <li>Produz alimento para toda a população</li>
+                <li>Gera empregos no campo e na cidade</li>
+                <li>Sustenta a economia do país</li>
+                <li>Preserva o meio ambiente quando feita de forma correta</li>
+            </ul>
+        </section>
 
-        <p>A agricultura é <b>vida</b>. Quando respeitamos a terra e trabalhamos de forma consciente, todos ganham: o agricultor, a população e o planeta.</p>
+        <section id="parana" class="content-section">
+            <h2>O Agro no Paraná</h2>
+            <p>O Paraná é um estado muito importante para a agricultura do Brasil. Aqui plantamos:</p>
+            <ol>
+                <li>Soja</li>
+                <li>Milho</li>
+                <li>Trigo</li>
+                <li>Café</li>
+                <li>Frutas</li>
+            </ol>
+        </section>
 
-        <p><strong>Valorize o trabalho agrícola!</strong></p>
+        <section id="sustentabilidade" class="content-section">
+            <h2>Sustentabilidade</h2>
+            <p>É muito importante cultivar a terra de forma <em>sustentável</em>. Isso significa:</p>
+            <blockquote>
+                <p>Cuidar do solo, usar água corretamente e respeitar a natureza para que as próximas gerações também possam plantar e colher.</p>
+            </blockquote>
+        </section>
+
+        <section id="quiz" class="content-section">
+            <section class="quiz-section">
+                <h2>Quiz sobre o site</h2>
+                <p>Responda para verificar se você entendeu o tema apresentado.</p>
+
+                <div class="quiz-item">
+                    <p>1. Qual é o tema principal deste site?</p>
+                    <label><input type="radio" name="q1"> A importância da agricultura</label>
+                    <label><input type="radio" name="q1"> O uso de tecnologia em celulares</label>
+                    <label><input type="radio" name="q1"> A história dos esportes</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>2. Qual estado do Brasil é destacado como importante para a agricultura?</p>
+                    <label><input type="radio" name="q2"> Paraná</label>
+                    <label><input type="radio" name="q2"> Amazonas</label>
+                    <label><input type="radio" name="q2"> Rio de Janeiro</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>3. O que é destacado como essencial para a agricultura sustentável?</p>
+                    <label><input type="radio" name="q3"> Cuidar do solo e usar a água corretamente</label>
+                    <label><input type="radio" name="q3"> Comprar mais eletrônicos</label>
+                    <label><input type="radio" name="q3"> Aumentar o tráfego nas cidades</label>
+                </div>
+            </section>
+        </section>
+
+        <section id="conclusao" class="content-section">
+            <h2>Conclusão</h2>
+            <p>A agricultura é <b>vida</b>. Quando respeitamos a terra e trabalhamos de forma consciente, todos ganham: o agricultor, a população e o planeta.</p>
+            <p><strong>Valorize o trabalho agrícola!</strong></p>
+        </section>
     </main>
+
+    <script>
+        const buttons = document.querySelectorAll('.menu-btn');
+        const sections = document.querySelectorAll('.content-section');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                sections.forEach(section => section.classList.remove('active'));
+
+                button.classList.add('active');
+                document.getElementById(button.dataset.target).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
