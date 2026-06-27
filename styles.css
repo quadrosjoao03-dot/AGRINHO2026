@@ -91,10 +91,15 @@ body {
 
 .menu-btn {
     background-color: #4f8a2b;
-    color: white;
     padding: 10px 14px;
     border-radius: 8px;
     font-weight: bold;
+}
+
+.menu-btn a {
+    color: white;
+    display: block;
+    text-decoration: none;
 }
 
 .menu-btn:hover {
