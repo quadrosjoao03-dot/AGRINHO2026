@@ -113,7 +113,8 @@ body {
     display: none;
 }
 
-.content-section.active {
+.content-section.active,
+.content-section:target {
     display: block;
 }
 
