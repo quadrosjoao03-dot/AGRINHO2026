@@ -52,6 +52,19 @@ main {
 .quiz-item {
     margin-bottom: 12px;
 }
+
+.content-section ul,
+.content-section ol {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #24521f;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
 .content-section img {
     width: 100%;
     max-height: 240px;
