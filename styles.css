@@ -52,3 +52,10 @@ main {
 .quiz-item {
     margin-bottom: 12px;
 }
+.content-section img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 12px;
+}
