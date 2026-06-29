@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f6fb;
-    color: #1f2d3d;
+    background-color: #8bcf5a;
+    color: #1f3b1b;
     padding: 20px;
 }
 
@@ -15,9 +15,9 @@ body.dark-mode {
     position: relative;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #dff5b8;
     padding: 25px;
-    border: 2px solid #c8d7e8;
+    border: 2px solid #4f8a2b;
 }
 
 body.dark-mode #page {
@@ -44,7 +44,7 @@ body.dark-mode #dark-mode-toggle:hover {
 }
 
 .menu-btn {
-    background-color: #3b5e87;
+    background-color: #4f8a2b;
     padding: 10px 14px;
     border-radius: 8px;
     font-weight: bold;
@@ -72,9 +72,9 @@ body.dark-mode #dark-mode-toggle:hover {
     position: relative;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #ffffff;
+    background-color: #dff5b8;
     padding: 25px;
-    border: 2px solid #c8d7e8;
+    border: 2px solid #4f8a2b;
 }
 
 .menu-btn a {
@@ -112,10 +112,9 @@ body.dark-mode .menu-btn.active {
 }
 
 .quiz-section {
-    background-color: #182027;
+    background-color: #eef9d7;
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #2f3b47;
 }
 
 .quiz-item {
@@ -127,7 +126,7 @@ body.dark-mode .menu-btn.active {
     font-family: 'Georgia', serif;
     font-size: 1rem;
     line-height: 1.8;
-    color: #d7dee6;
+    color: #24521f;
 }
 
 .content-section li {
