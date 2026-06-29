@@ -16,9 +16,11 @@ body.dark-mode {
     position: relative;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #bed971;
+    background-color: #c6df80;
     padding: 25px;
-    border: 2px solid #4f8a2b;    border-radius: 18px;}
+    border: 2px solid #4f8a2b;
+    border-radius: 18px;
+}
 
 body.dark-mode #page {
     background-color: #12181f;
@@ -97,6 +99,11 @@ body.dark-mode .menu-btn.active {
 
 .content-section {
     display: none;
+    background-color: #e8f0a4;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #b1d26d;
+    box-shadow: inset 0 0 0 1px rgba(79, 138, 43, 0.12);
 }
 
 .content-section.active {
@@ -104,9 +111,9 @@ body.dark-mode .menu-btn.active {
 }
 
 .quiz-section {
-    background-color: #c6df80;
-    padding: 15px;
-    border-radius: 10px;
+    background-color: #d7e88f;
+    padding: 18px;
+    border-radius: 12px;
     border: 1px solid #4f8a2b;
 }
 
@@ -135,11 +142,16 @@ body.dark-mode .menu-btn.active {
 }
 
 .content-section blockquote {
-    background-color: #bdd082;
+    background-color: #b6d26b;
     border-left: 4px solid #4f8a2b;
     color: #24521f;
     padding: 14px 16px;
     margin: 16px 0;
+}
+
+body.dark-mode .content-section {
+    background-color: #16212a;
+    border-color: #27414f;
 }
 
 body.dark-mode .content-section blockquote {
@@ -231,6 +243,19 @@ body.dark-mode #feedback-submit:hover {
 
 body.dark-mode .quiz-message {
     color: #d8e3f2;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid #4f8a2b;
+    color: #3f5b28;
+    font-size: 0.95rem;
+}
+
+body.dark-mode footer {
+    border-top-color: #26333f;
+    color: #a9b9cd;
 }
 
 @media (max-width: 600px) {
