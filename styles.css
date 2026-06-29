@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #8bcf5a;
+    background-color: #7fae3f;
     color: #1f3b1b;
     padding: 20px;
 }
@@ -15,7 +15,7 @@ body.dark-mode {
     position: relative;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #dff5b8;
+    background-color: #c6df80;
     padding: 25px;
     border: 2px solid #4f8a2b;
 }
@@ -103,7 +103,7 @@ body.dark-mode .menu-btn.active {
 }
 
 .quiz-section {
-    background-color: #dff5b8;
+    background-color: #c6df80;
     padding: 15px;
     border-radius: 10px;
     border: 1px solid #4f8a2b;
@@ -138,7 +138,7 @@ body.dark-mode .menu-btn.active {
 }
 
 .content-section blockquote {
-    background-color: #dff5b8;
+    background-color: #bdd082;
     border-left: 4px solid #4f8a2b;
     color: #24521f;
     padding: 14px 16px;
