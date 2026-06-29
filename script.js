@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuLinks = document.querySelectorAll('.menu-buttons a');
     const sections = document.querySelectorAll('.content-section');
-    const darkToggleLink = document.querySelector('.dark-toggle a');
+    const darkToggleLink = document.getElementById('dark-mode-toggle');
 
     const updateDarkToggleText = () => {
         if (!darkToggleLink) {
@@ -12,16 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
             : 'Modo Escuro';
     };
 
-    const toggleDarkMode = () => {
-        document.body.classList.toggle('dark-mode');
-        if (darkToggleLink) {
-            const toggleItem = darkToggleLink.closest('.menu-btn');
-            if (toggleItem) {
-                toggleItem.classList.toggle('active', document.body.classList.contains('dark-mode'));
-            }
+    const toggleDarkMode = (event) => {
+        if (event) {
+            event.preventDefault();
         }
+        document.body.classList.toggle('dark-mode');
         updateDarkToggleText();
     };
+
+    if (darkToggleLink) {
+        darkToggleLink.addEventListener('click', toggleDarkMode);
+    }
 
     const showSection = (sectionId) => {
         if (!sectionId) {
@@ -47,11 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             const targetId = link.getAttribute('href').slice(1);
             if (!targetId) {
-                return;
-            }
-
-            if (targetId === 'dark') {
-                toggleDarkMode();
                 return;
             }
 

@@ -25,6 +25,15 @@ body.dark-mode #page {
     border-color: #26333f;
 }
 
+body.dark-mode #dark-mode-toggle {
+    background-color: #4f6d90;
+    color: #f2f5fb;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #3d5a7f;
+}
+
 .menu-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -39,6 +48,33 @@ body.dark-mode #page {
     padding: 10px 14px;
     border-radius: 8px;
     font-weight: bold;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #3b5e87;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #2f4f73;
+}
+
+#page {
+    position: relative;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border: 2px solid #c8d7e8;
 }
 
 .menu-btn a {
@@ -111,11 +147,39 @@ body.dark-mode .menu-btn.active {
 }
 
 .content-section blockquote {
-    background-color: #12181f;
-    border-left: 4px solid #3d6b90;
-    color: #dfe7ef;
+    background-color: #f0f4fb;
+    border-left: 4px solid #3b5e87;
+    color: #1f2d3d;
     padding: 14px 16px;
     margin: 16px 0;
+}
+
+body.dark-mode .content-section blockquote {
+    background-color: #12181f;
+    border-left-color: #3d6b90;
+    color: #dfe7ef;
+}
+
+.project-info {
+    margin-top: 10px;
+    color: #4b5f77;
+}
+
+body.dark-mode .project-info {
+    color: #c2d3e2;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid #c8d7e8;
+    color: #5f6d7b;
+    font-size: 0.95rem;
+}
+
+body.dark-mode footer {
+    border-top-color: #26333f;
+    color: #a9b9cd;
 }
 
 @media (max-width: 600px) {
