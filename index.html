@@ -3,30 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Importância da Agricultura</title>
+    <title>Blog do Agro: A Importância da Agricultura</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <div id="page">
-        <header class="page-header">
-            <div>
-                <h1>AgriBlog Paraná</h1>
-                <p class="subtitle">Conteúdo sobre agricultura sustentável e o potencial do Paraná em forma de blog.</p>
-            </div>
-            <a id="dark-mode-toggle" href="#">Modo Escuro</a>
-        </header>
-
+        <a id="dark-mode-toggle" href="#">Modo Escuro</a>
+        <h1>Blog do Agro: Por que a Agricultura é Importante?</h1>
         <p class="project-info">Trabalho escolar sobre agricultura sustentável e o papel do Paraná no agro.</p>
 
-        <nav class="menu-buttons">
-            <div class="menu-btn active"><a href="#intro">Introdução</a></div>
-            <div class="menu-btn"><a href="#beneficios">Benefícios</a></div>
-            <div class="menu-btn"><a href="#parana">Paraná</a></div>
-            <div class="menu-btn"><a href="#sustentabilidade">Sustentabilidade</a></div>
-            <div class="menu-btn"><a href="#quiz">Quiz</a></div>
-            <div class="menu-btn"><a href="#conclusao">Conclusão</a></div>
-        </nav>
+        <ul class="menu-buttons">
+            <li class="menu-btn"><a href="#intro">Introdução</a></li>
+            <li class="menu-btn"><a href="#beneficios">Benefícios</a></li>
+            <li class="menu-btn"><a href="#parana">Paraná</a></li>
+            <li class="menu-btn"><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li class="menu-btn"><a href="#quiz">Quiz</a></li>
+            <li class="menu-btn"><a href="#conclusao">Conclusão</a></li>
+        </ul>
 
         <div id="intro" class="content-section active">
             <h2>Introdução</h2>
@@ -49,14 +43,14 @@
 
         <div id="parana" class="content-section">
             <h2>O Agro no Paraná</h2>
-            <p>O Paraná é um estado muito importante para a agricultura do Brasil. Aqui plantamos:</p>
-            <ol>
-                <li>Soja</li>
-                <li>Milho</li>
-                <li>Trigo</li>
-                <li>Café</li>
-                <li>Frutas</li>
-            </ol>
+            <p>O Paraná é um dos principais protagonistas da agricultura brasileira. Sua força vem da combinação entre solo fértil, clima favorável e técnicas modernas que ajudam a produzir mais sem destruir o meio ambiente.</p>
+            <ul>
+                <li><strong>Soja:</strong> é a principal cultura do estado, responsável por grande parte das exportações e pelo fortalecimento da economia local.</li>
+                <li><strong>Milho:</strong> usado tanto para alimentação humana quanto para produção de ração animal, contribuindo com a cadeia produtiva do agronegócio.</li>
+                <li><strong>Trigo:</strong> o Paraná garante abastecimento de farinha, pães e massas no país, ajudando a reduzir a dependência de importações.</li>
+                <li><strong>Café:</strong> cultivado em regiões de altitude, o café paranaense tem qualidade reconhecida e ajuda pequenos produtores a crescerem.</li>
+                <li><strong>Frutas:</strong> a produção de frutas como uva, maçã e pera fortalece o mercado interno e diversifica a renda dos agricultores.</li>
+            </ul>
             <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80" alt="Plantação no Paraná">
         </div>
 
@@ -77,6 +71,14 @@
                 <input type="text" id="quiz-name" placeholder="Seu nome">
                 <button type="button" id="quiz-submit">Enviar nome</button>
                 <div id="quiz-message" class="quiz-message"></div>
+
+                <div class="feedback-section">
+                    <h3>Deixe seu feedback</h3>
+                    <p>O que você achou do site? Sua opinião nos ajuda a melhorar.</p>
+                    <textarea id="feedback-text" placeholder="Escreva seu comentário aqui..."></textarea>
+                    <button type="button" id="feedback-submit">Enviar feedback</button>
+                    <div id="feedback-message" class="quiz-message"></div>
+                </div>
 
                 <ol>
                     <li>Qual é o tema principal deste site?

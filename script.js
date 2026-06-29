@@ -28,11 +28,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizSubmitButton = document.getElementById('quiz-submit');
     const quizMessage = document.getElementById('quiz-message');
 
+    const feedbackText = document.getElementById('feedback-text');
+    const feedbackSubmitButton = document.getElementById('feedback-submit');
+    const feedbackMessage = document.getElementById('feedback-message');
+
     if (quizSubmitButton) {
         quizSubmitButton.addEventListener('click', () => {
             const name = quizNameInput?.value.trim() || 'Aluno';
             if (quizMessage) {
                 quizMessage.textContent = `Olá ${name}! Boa sorte no quiz.`;
+            }
+        });
+    }
+
+    if (feedbackSubmitButton) {
+        feedbackSubmitButton.addEventListener('click', () => {
+            const feedback = feedbackText?.value.trim();
+            if (feedbackMessage) {
+                if (feedback) {
+                    feedbackMessage.textContent = 'Obrigado pelo seu feedback!';
+                } else {
+                    feedbackMessage.textContent = 'Por favor, escreva algo antes de enviar.';
+                }
             }
         });
     }
