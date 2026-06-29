@@ -54,7 +54,7 @@ body.dark-mode #dark-mode-toggle:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #3b5e87;
+    background-color: #4f8a2b;
     color: #ffffff;
     display: inline-block;
     padding: 8px 12px;
@@ -65,7 +65,7 @@ body.dark-mode #dark-mode-toggle:hover {
 }
 
 #dark-mode-toggle:hover {
-    background-color: #2f4f73;
+    background-color: #3e7124;
 }
 
 .menu-btn a {
@@ -75,11 +75,11 @@ body.dark-mode #dark-mode-toggle:hover {
 }
 
 .menu-btn:hover {
-    background-color: #2f4f73;
+    background-color: #3e7124;
 }
 
 .menu-btn.active {
-    background-color: #1e3a57;
+    background-color: #3b5e87;
 }
 
 body.dark-mode .menu-btn {
@@ -103,9 +103,10 @@ body.dark-mode .menu-btn.active {
 }
 
 .quiz-section {
-    background-color: #eef9d7;
+    background-color: #dff5b8;
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid #4f8a2b;
 }
 
 .quiz-item {
@@ -137,9 +138,9 @@ body.dark-mode .menu-btn.active {
 }
 
 .content-section blockquote {
-    background-color: #f0f4fb;
-    border-left: 4px solid #3b5e87;
-    color: #1f2d3d;
+    background-color: #dff5b8;
+    border-left: 4px solid #4f8a2b;
+    color: #24521f;
     padding: 14px 16px;
     margin: 16px 0;
 }
@@ -152,7 +153,7 @@ body.dark-mode .content-section blockquote {
 
 .project-info {
     margin-top: 10px;
-    color: #4b5f77;
+    color: #3f5b28;
 }
 
 body.dark-mode .project-info {
