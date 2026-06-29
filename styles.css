@@ -4,6 +4,7 @@ body {
     background-color: #7fae3f;
     color: #1f3b1b;
     padding: 20px;
+    min-height: 100vh;
 }
 
 body.dark-mode {
