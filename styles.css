@@ -16,10 +16,9 @@ body.dark-mode {
     position: relative;
     max-width: 700px;
     margin: 20px auto;
-    background-color: #c6df80;
+    background-color: #bed971;
     padding: 25px;
-    border: 2px solid #4f8a2b;
-}
+    border: 2px solid #4f8a2b;    border-radius: 18px;}
 
 body.dark-mode #page {
     background-color: #12181f;
@@ -81,6 +80,7 @@ body.dark-mode #dark-mode-toggle:hover {
 
 .menu-btn.active {
     background-color: #3b5e87;
+    box-shadow: 0 0 0 2px rgba(79, 138, 43, 0.3);
 }
 
 body.dark-mode .menu-btn {
