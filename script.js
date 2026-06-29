@@ -24,6 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
         darkToggleLink.addEventListener('click', toggleDarkMode);
     }
 
+    const quizNameInput = document.getElementById('quiz-name');
+    const quizSubmitButton = document.getElementById('quiz-submit');
+    const quizMessage = document.getElementById('quiz-message');
+
+    if (quizSubmitButton) {
+        quizSubmitButton.addEventListener('click', () => {
+            const name = quizNameInput?.value.trim() || 'Aluno';
+            if (quizMessage) {
+                quizMessage.textContent = `Olá ${name}! Boa sorte no quiz.`;
+            }
+        });
+    }
+
     const showSection = (sectionId) => {
         if (!sectionId) {
             sectionId = 'intro';

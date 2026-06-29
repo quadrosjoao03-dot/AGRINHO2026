@@ -160,6 +160,36 @@ body.dark-mode .project-info {
     color: #c2d3e2;
 }
 
+#quiz-name {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px;
+    margin: 12px 0 8px;
+    border: 1px solid #4f8a2b;
+    border-radius: 6px;
+    background-color: #f7f9e0;
+    color: #1f3b1b;
+}
+
+#quiz-submit {
+    background-color: #4f8a2b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#quiz-submit:hover {
+    background-color: #3e7124;
+}
+
+.quiz-message {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #24521f;
+}
+
 footer {
     margin-top: 30px;
     padding-top: 16px;
