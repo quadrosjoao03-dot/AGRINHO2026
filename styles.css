@@ -243,14 +243,42 @@ body.dark-mode .quiz-message {
 }
 
 body.dark-mode .content-section {
-    background-color: #16212a;
+    background-color: #12181f;
     border-color: #27414f;
+    color: #e1e8f2;
+}
+
+body.dark-mode .content-section h2,
+body.dark-mode .content-section p,
+body.dark-mode .content-section li,
+body.dark-mode .content-section dt,
+body.dark-mode .content-section dd,
+body.dark-mode .content-section ul,
+body.dark-mode .content-section ol,
+body.dark-mode .content-section blockquote {
+    color: #e1e8f2;
 }
 
 body.dark-mode .content-section blockquote {
     background-color: #12181f;
     border-left-color: #3d6b90;
     color: #dfe7ef;
+}
+
+body.dark-mode .quiz-section {
+    background-color: #1d2a38;
+    border-color: #3d5a7f;
+}
+
+body.dark-mode .feedback-section {
+    background-color: #16212a;
+    border-color: #33455b;
+}
+
+body.dark-mode #feedback-text {
+    background-color: #12181f;
+    border-color: #33455b;
+    color: #e7eef7;
 }
 
 .project-info {
