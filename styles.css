@@ -190,6 +190,22 @@ body.dark-mode #feedback-submit:hover {
     background-color: #3d5a7f;
 }
 
+body.dark-mode .quiz-section {
+    background-color: #1d2a38;
+    border-color: #3d5a7f;
+}
+
+body.dark-mode .feedback-section {
+    background-color: #16212a;
+    border-color: #33455b;
+}
+
+body.dark-mode #feedback-text {
+    background-color: #12181f;
+    border-color: #33455b;
+    color: #e7eef7;
+}
+
 body.dark-mode .quiz-message {
     color: #d8e3f2;
 }
