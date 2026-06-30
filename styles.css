@@ -117,58 +117,6 @@ body.dark-mode .menu-btn.active {
     border: 1px solid #4f8a2b;
 }
 
-.content-section ul,
-.content-section ol {
-    font-family: 'Georgia', serif;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #24521f;
-}
-
-.content-section li {
-    margin-bottom: 8px;
-}
-
-.content-section img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 260px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-top: 12px;
-    display: block;
-    filter: brightness(0.95) contrast(1.05);
-}
-
-.content-section blockquote {
-    background-color: #b6d26b;
-    border-left: 4px solid #4f8a2b;
-    color: #24521f;
-    padding: 14px 16px;
-    margin: 16px 0;
-}
-
-body.dark-mode .content-section {
-    background-color: #16212a;
-    border-color: #27414f;
-}
-
-body.dark-mode .content-section blockquote {
-    background-color: #12181f;
-    border-left-color: #3d6b90;
-    color: #dfe7ef;
-}
-
-.project-info {
-    margin-top: 10px;
-    color: #3f5b28;
-}
-
-body.dark-mode .project-info {
-    color: #c2d3e2;
-}
-
 #quiz-name {
     width: 100%;
     max-width: 320px;
@@ -188,6 +136,7 @@ body.dark-mode .project-info {
     padding: 10px 16px;
     border-radius: 6px;
     cursor: pointer;
+    margin-top: 8px;
 }
 
 #quiz-submit:hover,
@@ -243,6 +192,58 @@ body.dark-mode #feedback-submit:hover {
 
 body.dark-mode .quiz-message {
     color: #d8e3f2;
+}
+
+.content-section ul,
+.content-section ol {
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #24521f;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+.content-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 12px;
+    display: block;
+    filter: brightness(0.95) contrast(1.05);
+}
+
+.content-section blockquote {
+    background-color: #b6d26b;
+    border-left: 4px solid #4f8a2b;
+    color: #24521f;
+    padding: 14px 16px;
+    margin: 16px 0;
+}
+
+body.dark-mode .content-section {
+    background-color: #16212a;
+    border-color: #27414f;
+}
+
+body.dark-mode .content-section blockquote {
+    background-color: #12181f;
+    border-left-color: #3d6b90;
+    color: #dfe7ef;
+}
+
+.project-info {
+    margin-top: 10px;
+    color: #3f5b28;
+}
+
+body.dark-mode .project-info {
+    color: #c2d3e2;
 }
 
 footer {
